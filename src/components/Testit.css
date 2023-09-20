@@ -1,0 +1,58 @@
+
+  
+
+  
+
+
+
+  
+  @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+  
+  .title {
+    padding-left: 1em;
+    grid-column: 1 / -1;
+    grid-row: 1;
+  
+    font-family: "Prata", serif;
+    font-size: 8vw;
+    width: 100%;
+    z-index: 2;
+
+  
+    > .title-inner {
+      display: inline-block;
+    }
+  }
+  
+  @keyframes text-clip {
+    from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  
+
+
+
+  
+
+  
+
+
+  
+  .mozart-inner {
+    animation: text-clip 1.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  }
+  
+
+  
+
+  
+
+  
+
+ 
+
+  

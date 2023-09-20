@@ -1,0 +1,63 @@
+      <div className="row align-items-center pt-5 pb-5" style={{ backgroundColor: 'rgb(215, 228, 237,0.7)' }}>  
+      <div className="col-md-6">
+      <div className="ofeed-intersection-area">
+  
+  <div className="ofeed-shoppable-image ofeed-shoppable-image">
+    
+      <span className="ofeed-aspect-ratio-box ofeed-aspect-ratio-box--portrait">
+      <Slide left><img className="ofeed-image" alt='productLayout' src={technicalI}/></Slide>
+      </span>
+   
+      <ul style={{listStyle:'none'}}>
+
+        <li className="ofeed-shoppable-image__area" style={{top: '67.7217%', left: '61.3%'}}>
+          <div className="ofeed-shoppable-image__dot" ></div>
+        </li>
+
+        <li className="ofeed-shoppable-image__area" style={{top: '67.7217%', left: '38.7%'}}>
+          <div className="ofeed-shoppable-image__dot" ></div>
+        </li>
+
+        <li className="ofeed-shoppable-image__area" style={{top: '67.7217%', left: '33.4%'}}>
+          <div className="ofeed-shoppable-image__dot" ></div>         
+        </li>
+
+        <li className="ofeed-shoppable-image__area" style={{top: '67.7217%', left: '44.4%'}}>
+          <div className="ofeed-shoppable-image__dot" ></div>         
+        </li>
+
+        <li className="ofeed-shoppable-image__area" style={{top: '67.7217%', left: '52.2%'}}>
+          <div className="ofeed-shoppable-image__dot" ></div>         
+        </li>
+
+      </ul>
+    
+  </div>
+
+      </div>
+      </div>
+         <div className="col-md-6">
+          <div className="ud-about-content-wrapper"  style={{ visibility: 'visible' }}>
+            <div className="ud-about-content" style={{ fontFamily: 'Quicksand' }}>
+            <Slide right>
+              <h5 className='text-start p-5 mozart-outer' style={{ lineHeight: '1.6em' }}>
+                The versatile <b>DMSBG-100</b> router combines
+                network, data, voice, and security features in a
+                single device, providing consistently high
+                performance across all access technologies.<br />
+                The DMSBG-100 offers a comprehensive
+                solution that meets all the requirements of small
+                and medium offices, providing everything they
+                need in one single box. It simplifies deployment
+                and management, eliminating the hassle of
+                having to manage multiple devices.
+                Designed specifically to meet the growing data
+                and voice needs of SOHOs and SMBs, the
+                DMSBG-100 delivers consistently high
+                performance throughout the entire network.
+              </h5>
+             </Slide> 
+            </div>
+          </div>
+         </div>
+      </div>
