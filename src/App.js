@@ -6,7 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Product from './components/Product';
 import ProductTwo from './components/ProductTwo'
-// import Contact from './components/Contact';
+// import Contact from './components/Contact';//1
 import { Routes, Route,Navigate} from "react-router-dom";
 import Documentation from './components/Documentation';
 import Support from './components/Support';
@@ -16,9 +16,10 @@ import Login from './components/Login';
 import Download from './components/Download';
 import { useEffect,useState } from 'react';
 import NotFound from './components/NotFound';
-import ContactUs from './components/ContactUs';
+// import ContactUs from './components/ContactUs';//2
 import Careers from './components/Careers';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import Contactedit from './components/Contactedit';
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -71,7 +72,8 @@ function App() {
                 acts like a catch-all for URLs that we don't have explicit
                 routes for. */}
           </Route>
-          <Route path='/Contact' element={<><Header/><ContactUs/><Footer/></>}/>
+          {/* <Route path='/Contact' element={<><Header/><ContactUs/><Footer/></>}/> */}
+          <Route path='/Contact' element={<><Header/><Contactedit/><Footer/></>}/>
           {/* <Route path='/ContactUs' element={<><Header/><ContactUs/><Footer/></>}/> */}
           <Route path='/Login' element={<Login/>}/>
           

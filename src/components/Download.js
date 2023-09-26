@@ -27,7 +27,7 @@ const Download = () => {
         <Accordion.Header>Firmware</Accordion.Header>
         <Accordion.Body >
           <ul style={{listStyle:'none'}}>
-            <li className='m-2'><a href='https://downloads.difuse.io' target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',color:'black'}}>Firmware 1.0<i className="fa-solid fa-arrow-up fa-sm m-2" style={{color:'#000',rotate:'45deg'}}></i></a></li>
+            <li className='m-2'><a href='https://gin.difuse.io/downloads' target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',color:'black'}}>Firmware 1.0<i className="fa-solid fa-arrow-up fa-sm m-2" style={{color:'#000',rotate:'45deg'}}></i></a></li>
           </ul>
         </Accordion.Body>
       </Accordion.Item>

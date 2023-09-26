@@ -366,12 +366,12 @@
 
 .contactform
 {
-width:440px;
+width:940px;
 height:600px;
 background:rgb(254,254,254,0.8);
-border-radius:8px;
+border-radius:40px;
 box-shadow:0 0 40px -10px #000;
-margin:calc(55vh - 220px) auto;
+margin:5rem auto;
 padding:50px 30px;max-width:calc(100vw - 40px);
 box-sizing:border-box;font-family:'Montserrat',sans-serif;
 position:relative;
