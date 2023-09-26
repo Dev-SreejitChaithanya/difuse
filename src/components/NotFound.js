@@ -9,7 +9,7 @@ const NotFound = () => {
         <p class="p-a">
            . The page you were looking for could not be found</p>
 
-        <a href='/home' class="back"><i className="fa-solid fa-house" style={{color: '#071f59'}}></i></a>
+        <a href='/' class="back"><i className="fa-solid fa-house" style={{color: '#071f59'}}></i></a>
     </div>
     </div>
   

@@ -6,16 +6,19 @@ import Home from './components/Home';
 import About from './components/About';
 import Product from './components/Product';
 import ProductTwo from './components/ProductTwo'
-import Contact from './components/Contact';
+// import Contact from './components/Contact';
 import { Routes, Route,Navigate} from "react-router-dom";
 import Documentation from './components/Documentation';
 import Support from './components/Support';
 import FAQ from './components/FAQ';
 import Login from './components/Login';
-import Testit from './components/Testit';
+
 import Download from './components/Download';
 import { useEffect,useState } from 'react';
 import NotFound from './components/NotFound';
+import ContactUs from './components/ContactUs';
+import Careers from './components/Careers';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -40,25 +43,25 @@ function App() {
   return (
 
     <div className="App">
-     <Routes>
-      <Route path='/' element={<Login/>}/>
-     </Routes>
+     {/* <Routes> */}
+      {/* <Route path='/' element={<Login/>}/> */}
+     {/* </Routes> */}
      
-      <Header/>
+      
      
       <Routes>
       
-          <Route path="/home" element={<Home />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/" element={<><Header/><Home /><Footer/></>} />
+          <Route path="/About" element={<><Header/><About /><Footer/></>} />
           <Route path="/Products" >
-          <Route path="SBM100" element={<Product title="SBM100"/>} />
-          <Route path="DMSBG100" element={<Product/>} />
-          <Route path="DPBX50" element={<ProductTwo/>} />
+          
+          <Route path="DMSBG100" element={<><Header/><Product/><Footer/></>} />
+          <Route path="DPBX50" element={<><Header/><ProductTwo/><Footer/></>} />
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
                 routes for. */}
           </Route>
-          <Route path="/Download" element={<Download />}>
+          <Route path="/Download" element={<><Header/><Download /><Footer/></>}>
           </Route>
           <Route path="/Support" >
           <Route path="Documentation" element={<Documentation/>} />
@@ -68,10 +71,15 @@ function App() {
                 acts like a catch-all for URLs that we don't have explicit
                 routes for. */}
           </Route>
-          <Route path='/Contact' element={<Contact/>}/>
+          <Route path='/Contact' element={<><Header/><ContactUs/><Footer/></>}/>
+          {/* <Route path='/ContactUs' element={<><Header/><ContactUs/><Footer/></>}/> */}
           <Route path='/Login' element={<Login/>}/>
-          <Route path='/test' element={<Testit/>}/>
-          <Route path='/404' element={<NotFound/>}/>
+          
+          <Route path='/Careers' element={<><Header/><Careers/><Footer/></>}/>
+          <Route path='/Privacy' element={<><Header/><PrivacyPolicy/><Footer/></>}/>
+          
+
+          <Route path='/404' element={<><Header/><NotFound/><Footer/></>}/>
 
           <Route path="*"  element={<Navigate to="/404" replace />}/>
       </Routes>
@@ -90,7 +98,7 @@ function App() {
         </a>
       </header> */}
       
-      <Footer/>
+  
       {showButton && (
         <button onClick={scrollToTop} className="back-to-top">
           <i className="fa-solid fa-chevron-up fa-lg" style={{color: '#ffffff'}}></i>

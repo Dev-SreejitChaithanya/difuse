@@ -12,7 +12,7 @@ import costeffective from '../assets/img/Cost-effective.png'
 import { Slide, Fade, Flip } from 'react-reveal'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-
+import Accordion from 'react-bootstrap/Accordion';
 const ProductTwo = (props) => {
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props} style={{padding:'1rem'}}>
@@ -21,9 +21,10 @@ const ProductTwo = (props) => {
   );
   return (
     <div> 
+
       {/* HERO SECTION */}
       <main role="main" style={{ paddingTop: '40vh',paddingBottom: '40vh',paddingLeft: '10vh',paddingRight: '10vh', backgroundImage: `url(${image})` }}>
-      <Fade top><h1 className="display-1 cover-heading  sm-12" style={{ fontWeight: 'bold', fontFamily: 'Quicksand' }}>Difuse Business Gateway</h1></Fade>
+      <Fade top><h1 className="display-1 cover-heading  sm-12" style={{ fontWeight: 'bold', fontFamily: 'Quicksand' }}>Difuse PBX</h1></Fade>
       <Fade top><p className="lead " style={{ fontFamily: 'Quicksand' }}>Difuse isn’t just another business gateway device; it’s an evolutionary step in IT solutions tailored for the modern business era. Prioritizing security with Linux and honing communication with an Asterisk-based PBX system, Difuse is the epitome of business transformation. Embrace a brighter, more efficient future by integrating Difuse into your business operations today.</p></Fade>
       </main>
       {/*PRODUCT DESCRIPTION*/}
@@ -223,38 +224,35 @@ This freedom means businesses can smoothly transition</Fade>
       <ul style={{listStyle:'none'}} >
 
 
-      <OverlayTrigger
+
+        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '30.7%'}} >
+        <OverlayTrigger
         placement="bottom"
         delay={{ show: 10, hide: 40 }}
         overlay={renderTooltip('USB Interface')}
-      >
-        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '30.7%'}} >
-          <div className="ofeed-shoppable-image__dot"></div>
+      ><div className="ofeed-shoppable-image__dot"></div></OverlayTrigger>
         </li>
-        </OverlayTrigger>
+        
+
+        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '23.4%'}}>
         <OverlayTrigger
         placement="bottom"
         delay={{ show: 10, hide: 40 }}
         overlay={renderTooltip('DC power port')}
-      >
-        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '23.4%'}}>
-          <div className="ofeed-shoppable-image__dot" ></div>         
+      ><div className="ofeed-shoppable-image__dot" ></div></OverlayTrigger>         
         </li>
-        </OverlayTrigger>
+        
+
+        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '43.4%'}}>
         <OverlayTrigger
         placement="bottom"
         delay={{ show: 10, hide: 40 }}
         overlay={renderTooltip('2 LAN Ports for connectivity')}
       >
-        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '43.4%'}}>
-          <div className="ofeed-shoppable-image__dot" ></div>         
+          <div className="ofeed-shoppable-image__dot" ></div> 
+          </OverlayTrigger>
+
         </li>
-</OverlayTrigger>
-
-
-
-
-
 
       </ul>
 
@@ -269,32 +267,164 @@ This freedom means businesses can smoothly transition</Fade>
           <div className="ud-about-content-wrapper"  style={{ visibility: 'visible' }}>
             <div className="ud-about-content" style={{ fontFamily: 'Quicksand' }}>
             <Slide right>
-              <h5 className='text-start p-5 mozart-outer' style={{ lineHeight: '1.6em' }}>
-                The versatile <b>DMSBG-100</b> router combines
-                network, data, voice, and security features in a
-                single device, providing consistently high
-                performance across all access technologies.<br />
-                The DMSBG-100 offers a comprehensive
-                solution that meets all the requirements of small
-                and medium offices, providing everything they
-                need in one single box. It simplifies deployment
-                and management, eliminating the hassle of
-                having to manage multiple devices.
-                Designed specifically to meet the growing data
-                and voice needs of SOHOs and SMBs, the
-                DMSBG-100 delivers consistently high
-                performance throughout the entire network.
-              </h5>
+            <Accordion  className='m-5 ' >
+      <Accordion.Item eventKey="0"  className='m-3' >
+        <Accordion.Header className='m-3'>Hardware</Accordion.Header>
+        <Accordion.Body >
+          <ul style={{listStyle:'none'}}>
+          									
+            <li className='m-3'><p><b>Peripheral Ports</b>    - USB, SD</p></li>
+            <li className='m-3'><p><b>LED Indicators</b>   - Power/Ready, Network</p></li>
+            <li className='m-3'><p><b>Reset Switch</b>   - Yes</p></li>			
+            <li className='m-3'><p><b>Power Supply</b>   - Output: 12VDC, 2A; Input: 100 ~ 240VAC, 50 ~ 60Hz</p></li>
+            <li className='m-3'><p><b>Network Interfaces</b>   - Dual Gigabit RJ45 ports</p></li>
+
+          </ul>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1"  className='m-3'>
+        <Accordion.Header className='mt-3 p-3'>Network</Accordion.Header>
+        <Accordion.Body>
+        <ul style={{listStyle:'none'}}>
+         
+            <li className='m-3'><p><b>WAN Modes</b>    - DHCP, Static IP & PPPoE </p></li>
+            <li className='m-2'><p><b>GSM</b>   - 1 Builtin SIM Slot</p></li>
+            <li className='m-2'><p><b>Voice and Fax Codecs</b>   - G.711 A-law/U-law, G.722, G.723.1, G.726, G.729A/B, iLBC, GSM, AAL2-G.726-32</p></li>
+            <li className='m-2'><p><b>Network Protocols</b>   - TCP/UDP/IP, RTP/RTCP, ICMP, ARP, DNS, DDNS, DHCP, NTP, TFTP, SSH, HTTP/HTTPS, PPPoE, SIP (RFC3261), STUN, SRTP, TLS</p></li>
+          </ul>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2"  className='m-3'>
+
+        <Accordion.Header className='mt-3 p-3'>Features</Accordion.Header>
+        <Accordion.Body>
+        <ul style={{listStyle:'none'}}>
+         
+            <li className='m-2'><p><b>Media Encryption</b>    - SRTP, TLS </p></li>
+            <li className='m-2'><p><b>Maximum Call Capacity</b>   - Supports up to 200 registered SIP devices/users Concurrent SIP calls: Up to 80 or 50 if SRTP encrypted</p></li>
+            <li className='m-2'><p><b>ISDN PRI & Analogue</b>   - Via Gateways</p></li>
+            <li className='m-2'><p><b>NAT Router</b>   - Yes</p></li>
+           
+          </ul>
+        </Accordion.Body>
+      </Accordion.Item>
+
+    </Accordion>
              </Slide> 
             </div>
           </div>
          </div>
       </div>
+      {/*FAQ */}
+      <div className="row align-items-center pt-5 pb-5" style={{ backgroundColor: '#E3ECF2' }}> 
+      <Fade top><h1 className="display-3 cover-heading  m-3" style={{fontWeight: 'bold', fontFamily: 'Quicksand' }}>FAQ</h1></Fade>
+         <div className="col-md-6">
+          
+          <div className="ud-about-image">
+          <Accordion  className='m-4' >
+      <Accordion.Item eventKey="0"  className='m-2' >
+        <Accordion.Header className='m-2'>What makes Difuse PBX a standout choice for small businesses?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Difuse PBX is a cutting-edge, energy-efficient communication hub tailored for small businesses. 
+                    Leveraging the power and flexibility of the renowned Asterisk platform, built on Quad-Core ARM CPU hardware,
+                    ensuring a smooth and reliable communication experience.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1"  className='m-2' >
+        <Accordion.Header className='m-2'>What are the exact hardware specs of the Difuse PBX system?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Engineered for excellence, Difuse PBX boasts a Quad-Core ARM CPU,
+a robust 2GB RAM, and a spacious 16GB onboard flash storage—ideal for dynamic business operations.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2"  className='m-2' >
+        <Accordion.Header className='m-2'>Does Difuse support my existing Phones ?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>It supports any SIP compliant IP Phones from any brand.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="3"  className='m-2' >
+        <Accordion.Header className='m-2'>How does the Difuse PBX system empower small businesses?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Designed with small business needs in mind, Difuse's hardware ensures swift call handling and seamless call routing, even during peak times.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="4"  className='m-2' >
+        <Accordion.Header className='m-2'> Keeping up with the times: Upgrading your Asterisk version on Difuse:</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Stay ahead of the curve. Difuse, with its open-source Asterisk foundation, allows for timely software upgrades, ensuring your communication remains state-of-the-art.
+</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="5"  className='m-2' >
+        <Accordion.Header className='m-2'> Guaranteeing excellence: Difuse's warranty and support:</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Commitment to quality is our motto. It comes with standard 1 year warranty and extendable up to 5 years. For in-depth warranty details and dedicated support, Difuse's official channels are always at your service.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="6"  className='m-2' >
+        <Accordion.Header className='m-2'>Safety first: Tips on backing up your invaluable Difuse system data:</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Safeguard your business insights. With Difuse, utilize local storage, USB drives, or the cloud to routinely backup system configurations and call logs.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
 
+    </Accordion>
+          </div>
+         </div>
+         <div className="col-md-6">
+          
+          <div className="ud-about-image">
+          <Accordion  className='m-4' >
+          <Accordion.Item eventKey="0"  className='m-2' >
+        <Accordion.Header className='m-2'>Does Difuse support my existing Phone lines</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Difuse supprts any SIP compliant PRI, BRI Analogue (FXO) and GSM gateways.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1"  className='m-2' >
+        <Accordion.Header className='m-2'> Does Difuse support softphones ?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Difuse supprts any SIP compliant softphones including popular open source Linphone, Microsip and commercial ones like Bria and Acrobits.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2"  className='m-2' >
+        <Accordion.Header className='m-2'>Concerned about storage? Here's how much call data Difuse PBX can handle:</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>With its 16GB storage, Difuse comfortably archives thousands of hours of high-quality voice calls.
+Storage utilization varies based on audio encoding and quality, but rest assured, it's built to serve businesses with high call volumes.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="3"  className='m-2' >
+        <Accordion.Header className='m-2'>Need more storage space? Here's the Difuse solution:</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>While the integrated 16GB should cater to most business needs, for those looking to expand, Difuse Difuse supports up tp 1 TB M2 Storage with an upgrade and seamlessly integrates with external storage solutions and cloud backups, ensuring your data is always accessible.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="4"  className='m-2' >
+        <Accordion.Header className='m-2'> Multitasking is key: Discover how many calls Difuse can manage simultaneously:</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>The brilliance of Difuse PBX lies in its multitasking prowess. Capable of handling upto 80 calls concurrently, it's the heart of a responsive business communication system.
+</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="5"  className='m-2' >
+        <Accordion.Header className='m-2'>Green Business? The Difuse PBX's energy efficiency decoded:</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>In an era of sustainable business practices, Difuse shines with its ARM-based CPU architecture, marrying performance with power efficiency.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="6"  className='m-2' >
+        <Accordion.Header className='m-2'>Seamless Integration: The step-by-step guide to setting up IP phones with Difuse:</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Incorporate your IP phones with ease. Simply connect them to the Difuse PBX's network and follow our detailed, user-friendly configuration guide.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
 
-
-
-
+    </Accordion>
+          </div>
+         </div>
+      </div>
     </div >
   );
 }
@@ -303,3 +433,30 @@ export default ProductTwo
 /* <button type="button" className="btn " data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip Content">
 <i className="fa-regular fa-circle-dot fa-lg" style={{color: '#071f59'}}></i>
  </button> */
+
+
+// Network Interfaces					Dual Gigabit RJ45 ports 
+
+// WAN Modes							DHCP, Static IP & PPPoE
+
+// ISDN PRI & Analogue					Via Gateways
+
+// GSM									1 Builtin SIM Slot
+
+// NAT Router							Yes 
+
+// Peripheral Ports					USB, SD
+
+// LED Indicators						Power/Ready, Network
+
+// Reset Switch						Yes
+
+// Voice and Fax Codecs				G.711 A-law/U-law, G.722, G.723.1, G.726, G.729A/B, iLBC, GSM, AAL2-G.726-32
+
+// Network Protocols					TCP/UDP/IP, RTP/RTCP, ICMP, ARP, DNS, DDNS, DHCP, NTP, TFTP, SSH, HTTP/HTTPS, PPPoE, SIP (RFC3261), STUN, SRTP, TLS
+
+// Media Encryption					SRTP, TLS
+
+// Universal Power Supply				Output: 12VDC, 2A; Input: 100 ~ 240VAC, 50 ~ 60Hz
+
+// Maximum Call Capacity				Supports up to 200 registered SIP devices/users Concurrent SIP calls: Up to 80 or 50 if SRTP encrypted

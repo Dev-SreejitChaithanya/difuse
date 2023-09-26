@@ -198,55 +198,62 @@ const Product = (props) => {
       </span>
    
       <ul style={{listStyle:'none'}} >
-      <OverlayTrigger
+
+        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '77.3%'}} >
+        <OverlayTrigger
         placement="bottom"
         delay={{ show: 10, hide: 40 }}
         overlay={renderTooltip('4 LAN Ports for extended connectivity')}
-      >
-        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '77.3%'}} >
-          <div className="ofeed-shoppable-image__dot" ></div>
+      ><div className="ofeed-shoppable-image__dot" ></div></OverlayTrigger>
         </li>
-      </OverlayTrigger>
+      
 
-      <OverlayTrigger
+
+        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '30.7%'}} >
+        <OverlayTrigger
         placement="bottom"
         delay={{ show: 10, hide: 40 }}
         overlay={renderTooltip('USB Interface')}
       >
-        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '30.7%'}} >
           <div className="ofeed-shoppable-image__dot"></div>
+          </OverlayTrigger>
         </li>
-      </OverlayTrigger>
+     
 
-      <OverlayTrigger
+
+        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '23.4%'}}>
+        <OverlayTrigger
         placement="bottom"
         delay={{ show: 10, hide: 40 }}
         overlay={renderTooltip('DC power port')}
       >
-        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '23.4%'}}>
-          <div className="ofeed-shoppable-image__dot" ></div>         
+          <div className="ofeed-shoppable-image__dot" ></div> 
+          </OverlayTrigger>         
         </li>
-      </OverlayTrigger> 
+      
 
-      <OverlayTrigger
+
+        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '43.4%'}}>
+        <OverlayTrigger
         placement="bottom"
         delay={{ show: 10, hide: 40 }}
         overlay={renderTooltip('SFP LAN & SFP WAN ports')}
       >
-        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '43.4%'}}>
-          <div className="ofeed-shoppable-image__dot" ></div>         
+          <div className="ofeed-shoppable-image__dot" ></div>  
+          </OverlayTrigger>       
         </li>
-      </OverlayTrigger>
+      
 
-      <OverlayTrigger
+
+        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '58.2%'}}>
+        <OverlayTrigger
         placement="bottom"
         delay={{ show: 10, hide: 40 }}
         overlay={renderTooltip('WLAN')}
-      >
-        <li className="ofeed-shoppable-image__area" style={{top: '48.7217%', left: '58.2%'}}>
-          <div className="ofeed-shoppable-image__dot" ></div>         
+      ><div className="ofeed-shoppable-image__dot" ></div>
+       </OverlayTrigger>         
         </li>
-      </OverlayTrigger>
+     
 
       </ul>
 
@@ -326,7 +333,101 @@ SQM based on automated test to mitigate bufferbloat</p></li>
           </div>
          </div>
       </div>
+      {/*FAQ */}
+      <div className="row align-items-center  pb-5" style={{ backgroundColor: '#f4fefe' }}> 
+      <Fade top><h1 className="display-3 cover-heading" style={{fontWeight: 'bold', fontFamily: 'Quicksand',margin:'6rem 0rem' }}>FAQ</h1></Fade>
+         <div className="col-md-6">
+          
+          <div className="ud-about-image">
+          <Accordion  className='m-4' >
+      <Accordion.Item eventKey="0"  className='m-2' >
+        <Accordion.Header className='m-2'>Are there recurring costs?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>There are no monthly or yearly costs. You pay once and you get 2 years of basic support and updates.
+If you need more complicated support or customizations, we can provide that for an additional fee.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1"  className='m-2' >
+        <Accordion.Header className='m-2'>Is Difuse open source?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Our underlying operating system difOS is based on OpenWRT and is opensource under the GPL license available here on github. The Difuse GUI is not opensource and is proprietary software.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2"  className='m-2' >
+        <Accordion.Header className='m-2'>Can I use the asterisk extensions remotely?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>In short yes, you can use all extensions remotely without the use of a VPN. A Large number of ISPs block SIP traffic. To circumvent this we have implemented end-to-end encryption using the native asterisk PJSIP stack. This allows you to use the extensions remotely without any issues.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="3"  className='m-2' >
+        <Accordion.Header className='m-2'>Can I generate SSL certificates within the Difuse platform?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Yes, Difuse supports ACME certificate generation using a user-friendly UI. This ensures that businesses can easily secure their web services without the complexities typically associated with SSL certificate processes.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="4"  className='m-2' >
+        <Accordion.Header className='m-2'>How does Difuse handle bandwidth management?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Difuse incorporates a simple bandwidth management system. Using an intuitive UI, administrators can easily allocate bandwidth, ensuring optimal distribution and preventing network congestion.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="5"  className='m-2' >
+        <Accordion.Header className='m-2'>Which VPN technologies does the Difuse Business Gateway support?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Difuse integrates multiple VPN solutions: IPSec for wide-ranging compatibility; WireGuard for efficiency; Tailscale for user-friendly connectivity; and Cloudflare Tunnel for ensuring secure and speedy connections even through multiple NAT layers.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
 
+
+    </Accordion>
+          </div>
+         </div>
+         <div className="col-md-6">
+          
+          <div className="ud-about-image">
+          <Accordion  className='m-4' >
+          <Accordion.Item eventKey="0"  className='m-2' >
+        <Accordion.Header className='m-2'>How fast is the WiFi?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>The WiFi is 802.11ax (WiFi 6) and can reach speeds of up to 1.8Gbps. The WiFi is dual band and supports both 2.4Ghz and 5Ghz.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1"  className='m-2' >
+        <Accordion.Header className='m-2'>How many WireGuard Peers can I have?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>You can add as many WireGuard peers as you want. The only limitation is the bandwidth and at very high numbers the hardware too, we have tested upto 30 peers which is the most any home or small office would need.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2"  className='m-2' >
+        <Accordion.Header className='m-2'>Is SQM supported?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Yes, SQM (CAKE) is supported by default. You can change the settings in the GUI to suit your needs with a few clicks.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="3"  className='m-2' >
+        <Accordion.Header className='m-2'>Can I transition from traditional telephony to Asterisk on Difuse?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Difuse, with Asterisk integration, facilitates a smooth transition from traditional landlines to VoIP communications, providing efficiency and notable cost savings.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="4"  className='m-2' >
+        <Accordion.Header className='m-2'>How secure are communications with Difuse?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>With features like encrypted voice communication and multiple VPN solutions (IPSec, WireGuard, Tailscale, and Cloudflare Tunnel). And secured web services through ACME-generated certificates, Difuse prioritizes comprehensive security in all business communications.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="5"  className='m-2' >
+        <Accordion.Header className='m-2'>How can I get support for my Difuse Business Gateway?</Accordion.Header>
+        <Accordion.Body >
+<p className='m-2'>Difuse offers robust customer support. Whether you have queries about Asterisk or VPN integrations. For other functionalities, our dedicated team is always ready to assist.</p>         
+        </Accordion.Body>
+      </Accordion.Item>
+
+
+    </Accordion>
+          </div>
+         </div>
+      </div>
 
 
 
@@ -335,7 +436,3 @@ SQM based on automated test to mitigate bufferbloat</p></li>
   );
 }
 export default Product
-
-/* <button type="button" className="btn " data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip Content">
-<i className="fa-regular fa-circle-dot fa-lg" style={{color: '#071f59'}}></i>
- </button> */

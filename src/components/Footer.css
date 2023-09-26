@@ -1,7 +1,9 @@
 .footer-dark {
+
     padding:50px 0 10px 0;
     color:#031159;
     background-color:#282d32;
+    overflow: hidden;
   }
   
   .footer-dark h3 {
@@ -58,7 +60,6 @@
   }
   
   .footer-dark .item.social {
-    margin-top: 10px;
     text-align:center;
     color: #031159;
   }
